@@ -1,11 +1,16 @@
 package calculadora;
-
+import java.util.Scanner;
+import java.util.Locale;
 public class CalculadoraSimples {
     public static void main(String[] args) {
-        float numero1 = 1;
-        float numero2 = 2;
-        float resposta = 0;
-        String operador = "+";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite um número:");
+        double numero1 = sc.nextDouble();
+        System.out.println("Digite outro número:");
+        double numero2 = sc.nextDouble();
+        double resposta = 0;
+        System.out.println("Digite a operação que deseja fazer:");
+        String operador = sc.next();
         System.out.println("DIGITE UM NÚMERO:");
         System.out.println("DIGITE O COMANDO QUE DESEJA:");
         System.out.println("+ PARA SOMAR");
