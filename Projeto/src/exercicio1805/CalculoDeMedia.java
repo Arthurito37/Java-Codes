@@ -29,6 +29,15 @@ public class CalculoDeMedia {
         System.out.println("Digite a segunda nota: " + nota2);
         System.out.println("Digite a terceira nota: " + nota3);
         System.out.println("Querido estudante " + nome + " do RA " + RA + " sua média é igual a " + media + ".");
+
+        if (media > 7.0){
+            System.out.println("Você foi aprovado.");
+        } else if (media > 5.0 && media < 7.0){
+            System.out.println("Você está de recuperação");
+        } else
+            System.out.println("Você foi reprovado:");
+
+
         sc.close();
     }
 }
