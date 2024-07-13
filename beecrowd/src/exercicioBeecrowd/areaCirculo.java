@@ -12,6 +12,6 @@ public class areaCirculo{
 
         System.out.printf("A=%.4f%n", area);
 
-        scanner.close(); // Boa prática para fechar o scanner
+        scanner.close();
     }
 }
