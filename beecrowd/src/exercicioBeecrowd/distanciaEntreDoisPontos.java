@@ -5,22 +5,24 @@ import java.util.Scanner;
 public class distanciaEntreDoisPontos {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
+        double [] xy = new double [8]; //cria a matriz que armazena os valores
         System.out.println("Vamos calcular a distância entre dois pontos:");
         System.out.println("Digite o x1:");
-        double x1 = scanner.nextDouble();
+        xy [0] = scanner.nextDouble(); //recebe x1
         System.out.println("Digite o y1:");
-        double y1 = scanner.nextDouble();
+        xy [2] = scanner.nextDouble(); //recebe y1
         System.out.println("Digite o x2:");
-        double x2 = scanner.nextDouble();
+        xy [1] = scanner.nextDouble(); //recebe x2
         System.out.println("Digite o y2:");
-        double y2 = scanner.nextDouble();
+        xy [3] = scanner.nextDouble(); //recebe y2
 
-        double p1 = (x2-x1) * (x2-x1);
-        double p2 = (y2-y1) * (y2-y1);
+        xy [4] = (xy [1]-xy [0]) * (xy [1] - xy [0]); // calcula a distância entre o ponto x1 e x2
+        xy [5] = (xy [3]-xy [2]) * (xy [3]-xy [2]);// calcula a distância entre o ponto y1 e x2
 
-        double distancia = Math.sqrt(p1+p2); //A função Math.sqrt faz a raiz quadrada
-        System.out.printf("A distância entre esses dois pontos é %.4f",distancia);
+        xy [6] = Math.sqrt(xy [4]+xy [5]); //A função Math.sqrt faz a raiz quadrada
+        System.out.printf("A distância entre esses dois pontos é %.4f",xy [6]);
 
         scanner.close();
     }
+   
 }
