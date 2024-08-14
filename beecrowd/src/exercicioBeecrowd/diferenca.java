@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class diferenca {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
-        int [] valores = new int [4]; //inicia a matriz com quatro valores
+        int [] valores = new int [5]; //inicia a matriz com quatro valores
         System.out.println("Digite um número:");
         valores [0] = scanner.nextInt(); // recebe o primeiro valor
         System.out.println("Digite um outro número:");
