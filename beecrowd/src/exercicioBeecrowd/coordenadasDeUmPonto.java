@@ -1,3 +1,4 @@
+package exercicioBeecrowd;
 import java.util.Scanner;
 
 /**
