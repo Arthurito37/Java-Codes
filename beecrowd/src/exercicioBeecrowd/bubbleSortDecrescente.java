@@ -2,12 +2,12 @@ package exercicioBeecrowd;
 
 public class bubbleSortDecrescente {
     public static void main(String[] args) {
-        // Suponha que essas são as três variáveis que você deseja ordenar
+        // váriaveis
         int a = 2;
         int b = 4;
         int c = 8;
 
-        // Implementa o Bubble Sort para ordem decrescente sem array
+        // Implementa o Bubble Sort para ordem decrescente
         if (a < b) { int temp = a; a = b; b = temp; }
         if (b < c) { int temp = b; b = c; c = temp; }
         if (a < b) { int temp = a; a = b; b = temp; }
