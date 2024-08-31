@@ -1,3 +1,4 @@
+package exercicioBeecrowd;
 import java.util.Scanner;
 /**
  * Leia um número inteiro que representa um código de DDD para discagem interurbana.
